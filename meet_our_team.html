@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMOFI</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url(aubg.jpg);
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #333;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .team-member {
+      width: calc(33.333% - 20px);
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      padding: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .team-member:hover {
+      background-color: #f5f5f5;
+    }
+
+    .team-member img {
+      max-width: 100%;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .team-member-info {
+      display: none;
+    }
+
+    .team-member-info p {
+      line-height: 1.6;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MEET OUR TEAM</h1>
+  </header>
+
+  <div class="container">
+    <div class="team-member" onclick="toggleInfo('member1')">
+      <img src="man.jpeg" alt="Team Member 1">
+      <h3>ARMAN SINGH</h3>
+      <div class="team-member-info" id="member1">
+        <p>TEAM LEADER</p>
+      </div>
+    </div>
+
+    <div class="team-member" onclick="toggleInfo('member2')">
+      <img src="woman.jpeg" alt="Team Member 2">
+      <h3>DIVYANKA CHATURVEDI</h3>
+      <div class="team-member-info" id="member2">
+        <p>MEMBER</p>
+      </div>
+    </div>
+
+    <div class="team-member" onclick="toggleInfo('member1')">
+        <img src="man.jpeg" alt="Team Member 1">
+        <h3>KUSHAGRA TANDON</h3>
+        <div class="team-member-info" id="member1">
+          <p>MEMBER</p>
+        </div>
+      </div>
+
+      <div class="team-member" onclick="toggleInfo('member1')">
+        <img src="man.jpeg" alt="Team Member 1">
+        <h3>AKSHAY MANI TRIPATHI</h3>
+        <div class="team-member-info" id="member1">
+          <p>MEMBER</p>
+        </div>
+      </div>
+
+      <div class="team-member" onclick="toggleInfo('member1')">
+        <img src="woman.jpeg" alt="Team Member 1">
+        <h3>SAKSHI CHAUHAN</h3>
+        <div class="team-member-info" id="member1">
+          <p>MEMBER</p>
+        </div>
+      </div>
+
+    <!-- Add more team members as needed -->
+
+  </div>
+
+  
+
+</body>
+</html>
